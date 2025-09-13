@@ -5,7 +5,7 @@ import React, {useState} from 'react';
 const GlowingCard: React.FC<{ children: React.ReactNode, className: string }> = ({children, className = ''}) => (
     <div className={`relative p-8 rounded-3xl shadow-2xl overflow-hidden backdrop-blur-lg ${className}`}>
         <div className="absolute inset-0 z-0 opacity-50">
-            <div className="absolute inset-0 bg-gradient-to-br from-blue-500 via-blue-500 to-indigo-900 rounded-3xl animate-pulse "/>
+            <div className="absolute inset-0 bg-gradient-to-br from-blue-500 via-blue-500 to-indigo-900 rounded-3xl"/>
         </div>
         <div className="relative z-10">
             {children}
